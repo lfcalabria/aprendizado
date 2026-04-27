@@ -1,0 +1,41 @@
+{
+    "best_model_name": "AttentionMLP",
+    "model_type": "pytorch",
+    "model_class": "AttentionMLP",
+    "model_path": "titanic_output\\production\\best_model.pth",
+    "scaler_path": "titanic_output\\production\\scaler.joblib",
+    "feature_names": [
+        "pclass",
+        "sex_enc",
+        "age",
+        "sibsp",
+        "parch",
+        "log_fare",
+        "log_fare_per_person",
+        "family_size",
+        "is_alone",
+        "age_pclass",
+        "emb_Q",
+        "emb_S"
+    ],
+    "n_features": 12,
+    "n_classes": 2,
+    "class_labels": {
+        "0": "Não sobreviveu",
+        "1": "Sobreviveu"
+    },
+    "threshold": 0.5,
+    "imbalance_treatment": {
+        "stratified_split": true,
+        "class_weight_balanced": true,
+        "metric_f1_macro": true
+    },
+    "metrics_test": {
+        "accuracy": 0.8268,
+        "f1_macro": 0.8109,
+        "precision": 0.827,
+        "recall": 0.8024,
+        "auc_roc": 0.8586
+    },
+    "timestamp": "2026-04-27T18:11:40.188838"
+}
