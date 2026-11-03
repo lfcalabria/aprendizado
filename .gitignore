@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+outputs/
+__pycache__/
+.agents/
+.claude/
+datasets/cred*
+Códigos/catboost_info/
+Códigos/.ipynb_checkpoints/
+datasets/.ipynb_checkpoints/
+funcoes/.ipynb_checkpoints/
