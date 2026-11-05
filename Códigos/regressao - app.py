@@ -24,7 +24,7 @@ st.set_page_config(
 @st.cache_resource
 def carregar_modelo():
     """Carrega o modelo final e o scaler salvos no retreino."""
-    modelo = joblib.load('../modelos/modelo_final.joblib')
+    modelo = joblib.load("../modelos/modelo_final.joblib")
     scaler = joblib.load('../modelos/scaler_final.joblib')
     return modelo, scaler
 
