@@ -166,8 +166,8 @@ with aba_manual:
                 st.error('### Maligno')
 
         with col2:
-            st.metric('Probabilidade de benigno', f'{prob:.1%}')
-            st.progress(prob)
+            st.metric('Modelo Didático', f' ')
+            
 
         if prob < limiar:
             st.warning('Resultado abaixo do limiar — classificado como **maligno**. '
